@@ -14,7 +14,7 @@ def search():
     query = request.form['query']  # الحصول على الكلمة من النموذج
 
     # تحميل ملف CSV
-    df = pd.read_csv('/home/mhmood/Desktop/form.py/alqrain/data/data.csv', encoding='utf-8')
+    df = pd.read_csv('data/data.csv', encoding='utf-8')
 
     # البحث عن الكلمة باستخدام regex للتأكد أنها كلمة كاملة
     matching_rows = df[df['aya_text_emlaey'].apply(
