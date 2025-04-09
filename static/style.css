@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(imegs/bg3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.search-box{
+    display: block;
+    margin: 3.5% auto 0 auto;
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    width: 350px;
+    border: 3px #19333f solid;
+    height: 35%;
+    border-radius: 7px;
+    
+}
+form{
+    height: 100%;
+}
+.gg{
+    height: 20%;
+    position: relative;
+    top: 20%;
+}
+
+.ttt{
+    display: block;
+    margin: 4% auto 0 auto;
+    height: 50px;
+    width: 130px;
+    font-size: 30px;
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #19333f;
+    border-radius: 24px;
+    color: aliceblue;
+    transition: .4s ease;
+}
+.ttt:hover{
+    background-color:aliceblue;
+    color: #19333f;
+
+}
+.sss{
+    position: relative;
+    color: aliceblue;
+    font-family: "Reem Kufi", sans-serif;
+    font-optical-sizing: auto;
+    top:25%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+height: 20%;
+}
+.word{
+    font-size: 70px;
+}
+.f {
+    background-image: url(imegs/bg3.png);
+    font-family: Arial, sans-serif;
+    direction: rtl; /* لضبط الاتجاه من اليمين لليسار */
+    font-weight: 600;
+}
+
+/* الحاوية التي تحتوي على النموذج أو الجدول */
+.container {
+    
+    display: flex;
+    justify-content: center;  /* توسيط المحتوى أفقيًا */
+    align-items: center;      /* توسيط المحتوى عموديًا */
+    height: 100%;            /* جعل الحاوية تأخذ كامل ارتفاع الصفحة */
+    text-align: center;       /* توسيط النص */
+    flex-direction: column;   /* ترتيب العناصر عموديًا */
+    gap: 20px;                /* إضافة مسافة بين العناصر */
+    color: aliceblue;
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* تنسيق الجدول */
+table {
+    
+    width: 80%; 
+    border-collapse: collapse;  /* لجعل الحدود متلاصقة */
+    margin-top: 20px;
+}
+
+th, td {
+    background-color: #19333f;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;  /* إضافة حدود خفيفة */
+}
+
+th {
+    color: #19333f;
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;  /* تلوين الصفوف بالتناوب */
+}
+
+tr:hover {
+    background-color: #ddd;  /* تغيير لون الصف عند المرور عليه */
+}
+
+/* تنسيق للرسالة عند عدم وجود نتائج */
+td[colspan="3"] {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+}

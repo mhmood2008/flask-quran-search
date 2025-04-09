@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>كلمات القرآن</title>
+</head>
+<body class="body">
+    <div class="sss">
+        <h1 class="word">كلمات القرآن</h1>
+    </div>
+    <div class="gg">
+    <form action="/search" method="POST">
+    <button class="ttt">ابحث</button>
+    <input type="text" class="search-box" name="query" placeholder="اكتب الكلمه هنا...">
+    </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتائج البحث</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="f">
+
+    <div class="container">
+        <h1>نتائج البحث عن الكلمة: "{{ query }}"</h1> <!-- عرض الكلمة المدخلة -->
+        
+        <!-- جدول عرض النتائج -->
+        <table>
+            <thead>
+                <tr>
+                    <th>رقم</th>
+                    <th>سورة</th>
+                    <th>آية</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                    <tr>
+                        <td>{{ result['رقم الآيه'] }}</td>
+                        <td>{{ result['سورة'] }}</td>
+                        <td>{{ result['آية'] }}</td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td colspan="3">لا توجد نتائج لعرضها.</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
